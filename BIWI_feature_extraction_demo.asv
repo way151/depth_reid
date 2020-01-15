@@ -42,14 +42,18 @@ for id = 1:50
             mkdir(fullfile(save_train_path,subdir));
         end
         savefile = fullfile(save_train_path,subdir,sprintf('%s.mat',baseFName));
-        save(savefile,'pcn');
+        save(savefile,'pcn','-v7.3');
+
     end
     
 end
 
-% x1 = pcn(:,4);
-% y1 = pcn(:,5);
-% z1 = pcn(:,6);
+
+x = imread()
+
+% x1 = pointcloud_torso(:,1);
+% y1 = pointcloud_torso(:,2);
+% z1 = pointcloud_torso(:,3);
 % scatter3(x1,y1,z1,1);
 % hold on;
 % xlabel('x');
